@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    background-color: #fff;
+}
+
+td:focus {
+    outline: 2px solid #00f;
+}
+
+/* Container for buttons and grand total */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0; /* Fixed at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+    background-color: white; /* White background for visibility */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}

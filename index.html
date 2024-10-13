@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/function.css">
+
+        <title>Responsive menu ui - Bedimcode</title>
+    </head>
+    <body>
+        
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+        
+                <div class="nav__close" id="nav-close">
+                    <i class='ri-close-line'></i> <!-- Cambiado a Remixicons -->
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <img src="assets/img/perfil.png" alt="" class="nav__img">
+                    </div>
+        
+                    <span class="nav__greeting">Hola</span>
+                    <h1 class="nav__name">Rocio <br> Avila</h1>
+                </div>
+        
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="home.html" class="nav__link active-link">
+                            <i class='ri-home-line'></i> <!-- Cambiado a Remixicons -->
+                            Inicio 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="bills.html" class="nav__link">
+                            <i class="ri-money-dollar-circle-line"></i>
+                            Gastos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="settings.html" class="nav__link">
+                            <i class='ri-settings-line'></i> <!-- Cambiado a Remixicons -->
+                            Ajustes
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="app_info.html" class="nav__link">
+                            <i class='ri-information-line'></i> <!-- Cambiado a Remixicons -->
+                            Informacion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        Rocio
+                    </a>
+            
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='ri-apps-line'></i> <!-- Cambiado a Remixicons -->
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" id="home">
+                <h1>Inicio</h1>
+                    
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Conos</th>
+                            <th>Vasos</th>
+                            <th>Gastos</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true" class="cones-input"></td>
+                            <td contenteditable="true" class="cups-input"></td>
+                            <td contenteditable="true" class="expenses-input"></td>
+                            <td class="total-cell">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <div class="footer">
+                    <div>
+                        <strong>Final Total:</strong>
+                        <span id="grand-total">0</span>
+                    </div>
+                    <div class="button-container">
+                        <button id="add-row">Agregar columna</button>
+                        <button id="download">Descargar</button>
+                        <button id="delete-row">Borrar columna</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/function.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    </body>
+</html>
